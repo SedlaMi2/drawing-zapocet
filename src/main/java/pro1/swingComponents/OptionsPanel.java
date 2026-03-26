@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class OptionsPanel extends JPanel {
     public OptionsPanel(MainFrame parent) {
-        this.setPreferredSize(new Dimension(200, 0));
+        this.setPreferredSize(new Dimension(225, 0));
         this.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 20));
         this.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.GRAY));
 
