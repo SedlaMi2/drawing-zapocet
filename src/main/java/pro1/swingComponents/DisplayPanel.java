@@ -1,12 +1,10 @@
 package pro1.swingComponents;
 
 import pro1.drawingModel.Drawable;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class DisplayPanel extends JPanel {
-
     Drawable drawable = null;
 
     public DisplayPanel(){

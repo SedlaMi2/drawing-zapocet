@@ -9,22 +9,22 @@ public class OptionsPanel extends JPanel {
         this.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 20));
         this.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.GRAY));
 
-        this.add(new JLabel("Poloměr koleček:"));
-        JSlider radiusSlider = new JSlider(5, 100, 20);
+        this.add(new JLabel("Poloměr kruhů:"));
+        JSlider radiusSlider = new JSlider(5, 90, 20);
         this.add(radiusSlider);
         radiusSlider.addChangeListener(e -> {
             parent.setRadius(radiusSlider.getValue());
             parent.refreshDrawing();
         });
 
-        JCheckBox hideLines = new JCheckBox("Zobrazit úsečky", true);
+        JCheckBox hideLines = new JCheckBox("Zobrazit/Skrýt úsečky", true);
         this.add(hideLines);
         hideLines.addActionListener(e -> {
             parent.setLinesVisible(hideLines.isSelected());
             parent.refreshDrawing();
         });
 
-        JButton resetBtn = new JButton("Resetovat");
+        JButton resetBtn = new JButton("Obnovit");
         this.add(resetBtn);
         resetBtn.addActionListener(e -> parent.reset());
     }

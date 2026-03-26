@@ -15,7 +15,7 @@ public class MainFrame extends JFrame {
     private boolean linesVisible = true;
 
     public MainFrame() {
-        this.setTitle("PRO1 Drawing - Úkol");
+        this.setTitle("PRO1 Drawing - Zápočet");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
@@ -60,8 +60,12 @@ public class MainFrame extends JFrame {
         return new Group(items.toArray(new Drawable[0]), 0, 0, 0, 1, 1);
     }
 
-    public void setRadius(int radius) { this.radius = radius; }
-    public void setLinesVisible(boolean visible) { this.linesVisible = visible; }
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+    public void setLinesVisible(boolean visible) {
+        this.linesVisible = visible;
+    }
     public void reset() {
         this.points.clear();
         refreshDrawing();
